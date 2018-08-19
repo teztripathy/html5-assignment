@@ -1,0 +1,77 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Xena Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: lavenderblush;
+			margin: 1cm;
+			border: 2px solid blue;
+			padding: 1cm;
+			border-radius: 20px;
+        }
+        input {
+            text-transform: uppercase;
+        }
+        table {
+            width: 60%;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var name = document.forms['register']['name'].value;
+            var age = document.forms['register']['age'].value;
+            var email = document.forms['register']['email'].value;
+            if(!name.match(/^[A-Za-z]+$/)) {
+				alert("Name:\t* CHARACTERS ONLY");
+			}
+            if(parseInt(age) < 18) {
+                alert("Age:\t* EQUAL OR GREATER THAN 18");
+            }
+            if(!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+                alert("Email ID:\t* INVALID EMAIL ID");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" version="1.1" content="&lt;mxfile userAgent=&quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0&quot; version=&quot;9.0.6&quot; editor=&quot;www.draw.io&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;73392218-610b-bcbb-4535-744ac0e1ed27&quot; name=&quot;Page-1&quot;&gt;rVRNk5swDP01HDcD5iPJMZ+7l+bQzbRnLzjgWYNYx2xIf30lbAI02Zl2phwY60mynqQHXrgp22fN6+IbZEJ5zM9aL9x6jC3YHN8EXC0QJbEFci0zCwUD8Cp/CQf6Dm1kJs6TQAOgjKynYApVJVIzwbjWcJmGnUBNq9Y8F3fAa8rVPfpTZqZwbcX+gL8ImRd95cB3njeevucamsrV81h46h7rLnl/l4s/FzyDywgKd1640QDGnsp2IxSNth+bzdt/4b3x1qIyf5MQ2oRPrhrRM+54mWs/i8KUCk+BF65vbH00Mn4uROYMrmRe4TnFukIj8Cm0kTjQlXOUMsvoRrqjppvLNifpzOy62Oyj4dmKznQ1ySaYz5IFGSSqRTSLl2hUYFKaIIuoKIW/CE4kAmJxkkptQIHumIf7vY8P4hoMNxKIRxSj7ZpGiqL9cnDBbR2ocgGlMPqKIS5hvrQZTuBB5BZ6GeTCYjfdYiQVFi2cTJ1E89vVw5rw4Db1eGvRg60lCiusC2Sd5Kbr0SInwIbGC00+GugdT+fu01thwDKp28FJHw1PpwlHWeI3yfyDuOD7O5S8miSkt8kPYL+DEWTp7Q5UdPdjdzj2TLFrS3baAMLjrv5QJ26w63sQqRbYFH/rAmj5NcjKdMOO1168Jd00BmzjXUKvXSVO5oFyDdQk25qnssqPZGyfov8jIpb4ExUx/15F8dy/V1Gf9w8iQnP4rXS+0a873P0G&lt;/diagram&gt;&lt;/mxfile&gt;" onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&amp;&amp;src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&amp;&amp;!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&amp;&amp;evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://www.draw.io/?client=1&amp;lightbox=1&amp;edit=_blank');}}})(this);" viewBox="0 0 809 362" style="cursor:pointer;max-width:100%;max-height:362px;"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"/><feOffset in="blur" dx="3" dy="3" result="offsetBlur"/><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"/><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"/><feBlend in="SourceGraphic" in2="offsetBlur"/></filter></defs><g transform="translate(0.5,0.5)" filter="url(#dropShadow)"><path d="M 195.18 159.32 L 219.41 159.32 L 219.41 149.32 L 304 177 L 219.41 204.68 L 219.41 194.68 L 195.18 194.68 L 195.18 216.41 L 205.18 216.41 L 177.5 301 L 149.82 216.41 L 159.82 216.41 L 159.82 194.68 L 135.59 194.68 L 135.59 204.68 L 51 177 L 135.59 149.32 L 135.59 159.32 L 159.82 159.32 L 159.82 137.59 L 149.82 137.59 L 177.5 53 L 205.18 137.59 L 195.18 137.59 Z" fill="#ff0000" stroke="#000000" stroke-miterlimit="10" transform="rotate(45,177.5,177)" pointer-events="none"/><g transform="translate(233.5,115.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="556" height="145" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><h1><font style="font-size: 96px" face="Times New Roman" color="#FF0000">ENA EVENT</font></h1></div></div></foreignObject><text x="278" y="79" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">&lt;h1&gt;&lt;font style="font-size: 96px" face="Times New Roman" color="#FF0000"&gt;ENA EVENT&lt;/font&gt;&lt;/h1&gt;</text></switch></g></g></svg></div>
+    <div>
+        <form name="register" onsubmit="validateForm()">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>
+                        <input list="venue" id="ice-cream-choice" name="ice-cream-choice" />
+                        <datalist id="venue">
+                            <option value="Bangalore">
+                            <option value="Rajkot">
+                            <option value="Vijag">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr style="height: 12pt;"></tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

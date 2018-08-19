@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Awesome Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function red1() {
+            document.getElementById("part1").setAttribute("style","background-color: red;");
+        }
+        function blue1() {
+            document.getElementById("part1").setAttribute("style","background-color: blue;");
+        }
+        function green1() {
+            document.getElementById("part1").setAttribute("style","background-color: green;");
+        }
+        function red2() {
+            document.getElementById("part2").setAttribute("style","background-color: red;");
+        }
+        function blue2() {
+            document.getElementById("part2").setAttribute("style","background-color: blue;");
+        }
+        function green2() {
+            document.getElementById("part2").setAttribute("style","background-color: green;");
+        }
+    </script>
+</head>
+<body>
+    <div id="part1" align="center" style="margin-bottom: 0;">
+        <div align="right">
+            Backgroud:
+            <button type="button" onclick="red1()" style="background-color: red;">R</button>
+            <button type="button" onclick="blue1()" style="background-color: blue;">B</button>
+            <button type="button" onclick="green1()" style="background-color: green;">G</button>
+        </div>
+        <img width="50px" src="images.png">
+        <h1>Awesome Online Videos</h1>
+    </div>
+    <div id="part2" align="center" style="margin-bottom: 0;">
+        <div align="right">
+            Backgroud:
+            <button type="button" onclick="red2()" style="background-color: red;">R</button>
+            <button type="button" onclick="blue2()" style="background-color: blue;">B</button>
+            <button type="button" onclick="green2()" style="background-color: green;">G</button>
+        </div>
+        <video id="video1" width="420" poster="wipro.jpg">
+            <source src="wipro.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video><br/>
+        <button type="button" onclick="playPause()">Play</button>
+        <button type="button" onclick="playPause()">Pause</button>
+        <script>
+            var myVideo = document.getElementById("video1");
+            function playPause() { 
+                if (myVideo.paused) 
+                    myVideo.play(); 
+                else 
+                    myVideo.pause(); 
+            } 
+        </script>
+    </div>
+</body>
+</html>
